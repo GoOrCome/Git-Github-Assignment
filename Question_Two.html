@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>2. Design and develop a SignUp page using HTML and CSS. The login page should have a visually appealing layout as shown in the below image</title> -->
+    <style>
+        *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+        }
+        .container{
+            padding: 10px;
+            position: absolute;
+            transform: translatey(50vh);
+            width: 30vw;
+            border-radius: 10px;
+            height: 93vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+        input{
+            font-size: 20px;
+            padding-left: 3px;
+            border-radius: 3px;
+            width: 98%;
+            height: 10%;
+        }
+        select{
+            font-weight: bold;
+            width: 95%;
+            color: #6d6e6e;
+            margin-right:19px;
+            justify-self: flex-start;
+            height: 10%;
+        }
+        .button{
+            cursor: pointer;
+            margin-bottom: 10px;
+            background-color: #000000;
+            color: #fff;
+            border-radius: 5px;
+            width: 97%;
+            font-size: larger;
+            height: 10%;
+        }
+        .button:hover{
+            background-color: #fff;
+            color: #000000;
+            scale: 1.01;
+        }
+        label{
+            text-align: left;
+            width: 100%;
+        }
+        h1{
+            font-size: 40px;
+            padding: 35px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <label for="Name">Name:</label><br>
+        <input type="text" id="Name"><br>
+        <label for="Batch">Batch:</label><br>
+        <select name="Batch" id="Batch" id="Batch">
+            <option value="Sigma1">Sigma 1</option>
+            <option value="Sigma2.0">Sigma 2.0</option>
+        </select><br>
+        <label for="Age">Age:</label><br>
+        <input type="text" id="Age"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password"><br>
+        <input class="button" type="submit" value="Signup">
+    </div>
+</body>
+</html>
