@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>1. Design and develop a login page using HTML and CSS. The login page should have a visually appealing layout as shown in the below image</title> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            height: 100vh;
+            background-color: #e0dcdc;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+            background-color: #fff;
+            height: 50vh;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 1px  rgb(0, 0, 0, .25);
+            
+        }
+        input{
+            border: none;
+            outline: none;
+            height: 5%;
+            font-size: 20px;
+            border-bottom: 1px solid black;
+            width: 80%;
+        }
+        label{
+            justify-self: start;
+            /* border: 1px solid red; */
+            width: 80%;
+            font-weight: bolder;
+            color: #666060;
+        }
+        h1{
+            padding-bottom: 40px;
+        }
+        button{
+            height: 15%;
+            background-color: #4b96d4;
+            color: #ffffff;
+            border-radius: 5px;
+            box-shadow: none;
+            border: none;
+            font-weight: bolder;
+            font-size: 20px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <label for="text">Username</label><br>
+        <input type="text"><br>
+        <label for="password">Password</label><br>
+        <input type="password"><br>
+        <button>Submit</button>
+    </div>
+</body>
+</html>
